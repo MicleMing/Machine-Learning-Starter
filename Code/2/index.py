@@ -23,6 +23,6 @@ plt.show()
 
 
 plt.scatter(X_test, Y_test, color='red')
-plt.plot(X_test, Y_test, color='blue')
+plt.plot(X_test, Y_pred, color='blue')
 
 plt.show()
