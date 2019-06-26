@@ -21,7 +21,7 @@ m = y.size
 rand_indices = np.random.permutation(range(m))
 selected = X[rand_indices[0:100], :]
 
-# display_data(selected)
+display_data(selected)
 
 
 # input('Program paused. Press ENTER to continue')

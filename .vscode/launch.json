@@ -8,8 +8,8 @@
       "name": "Python: Current File",
       "type": "python",
       "request": "launch",
-      "cwd": "${workspaceFolder}/Ng-ML-PY/ex2",
-      "program": "${workspaceFolder}/Ng-ML-PY/ex2/ex2_reg.py",
+      "cwd": "${workspaceFolder}/Ng-ML-PY/ex4",
+      "program": "${workspaceFolder}/Ng-ML-PY/ex4/ex4.py",
       "console": "integratedTerminal"
     }
   ]

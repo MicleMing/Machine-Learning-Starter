@@ -18,9 +18,7 @@ def one_vs_all(X, y, num_labels, lmd):
     for i in range(num_labels):
         print('Optimizing for handwritten number {}...'.format(i))
 
-        costFunc = lCF.lr_cost_function
-
-        res = opt.minimize(costFunc, initail_theta, method='CG', jac=True, options={
+        res = opt.minimize(lCF.lr_cost_function, initail_theta, method='CG', jac=True, options={
             'maxiter': 50}, args=(X, y == i, lmd))
         all_theta[i] = res.x
 

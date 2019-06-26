@@ -11,7 +11,7 @@ def cost_function_reg(theta, X, y, lmd):
     item1 = -y * np.log(sigmoid(X.dot(theta)))
     item2 = (1 - y) * np.log(1 - sigmoid(X.dot(theta)))
 
-    reg = (lmd / (2 * m)) * np.sum(np.sqrt(theta))
+    reg = (lmd / (2 * m)) * np.sum(np.power(theta, 2))
 
     cost = (1 / m) * np.sum(item1 - item2) + reg
 
